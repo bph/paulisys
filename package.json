@@ -1,0 +1,7 @@
+{
+    "name": "paulisys",
+    "version": "1.0.0",
+    "bin": {
+        "paulisys": "index.js"
+    }
+}
