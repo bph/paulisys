@@ -13,5 +13,14 @@
         "pauli systems",
         "pauli-haack",
         "devops"
-    ]
+    ],
+    "license":"MIT",
+    "main": "index.js",
+    "repository": "bph/paulisys",
+    "author":{
+        "name":"Birgit Pauli-Haack",
+        "email": "birgit.pauli@paulisystems.net",
+        "url": "https://twitter.com/paulisystems"
+    }
+
 }
