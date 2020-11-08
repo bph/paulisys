@@ -1,6 +1,6 @@
 {
     "name": "paulisys",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Learn more about Pauli Systems via `npx paulisys`",
     "bin": {
         "paulisys": "index.js"
@@ -8,9 +8,10 @@
     "dependencies": {
         "cli-welcome": "^2.2.2"
     },
-    "keywords":[
+    "keywords": [
         "birgit",
         "pauli systems",
         "pauli-haack",
-        "devops"   ]
+        "devops"
+    ]
 }
