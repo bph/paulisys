@@ -1,6 +1,6 @@
 {
     "name": "paulisys",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Learn more about Pauli Systems via `npx paulisys`",
     "bin": {
         "paulisys": "index.js"
@@ -14,13 +14,12 @@
         "pauli-haack",
         "devops"
     ],
-    "license":"MIT",
+    "license": "MIT",
     "main": "index.js",
     "repository": "bph/paulisys",
-    "author":{
-        "name":"Birgit Pauli-Haack",
+    "author": {
+        "name": "Birgit Pauli-Haack",
         "email": "birgit.pauli@paulisystems.net",
         "url": "https://twitter.com/paulisystems"
     }
-
 }
