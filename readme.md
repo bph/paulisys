@@ -10,4 +10,4 @@ npx paulisys
 ```
 ## History
 
-This is a example project of <a href="https://nodecli.com/">the course NodeJS CLI </a> by Ahmad Awais
+This is an example project of <a href="https://nodecli.com/">the NodeJS CLI course</a> by Ahmad Awais
