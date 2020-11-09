@@ -1,6 +1,6 @@
 {
     "name": "paulisys",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "description": "Learn more about Pauli Systems via `npx paulisys`",
     "bin": {
         "paulisys": "index.js"
