@@ -3,6 +3,7 @@ const welcome = require('cli-welcome');
 const pkgJSON = require('./package.json');
 const chalk = require('chalk');
 const alert = require('pauli-alerts');
+const checkNode = require('cli-check-node');
 const log = console.log; 
 
  // Alerts
@@ -10,6 +11,8 @@ const log = console.log;
  const info = chalk.blue.inverse;
  const warning = chalk.keyword(`orange`).inverse;
  const error = chalk.red.bold.inverse;
+
+ 
 
 welcome ({
     title: `Pauli Systems`,
@@ -21,6 +24,8 @@ welcome ({
     bold: true,
     clear: true,
 });
+
+checkNode('10');
 
 log(`
 
