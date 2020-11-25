@@ -7,7 +7,8 @@
     },
     "dependencies": {
         "chalk": "^4.1.0",
-        "cli-welcome": "^2.2.2"
+        "cli-welcome": "^2.2.2",
+        "pauli-alerts": "^1.0.4"
     },
     "keywords": [
         "birgit",

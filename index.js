@@ -2,6 +2,7 @@
 const welcome = require('cli-welcome');
 const pkgJSON = require('./package.json');
 const chalk = require('chalk');
+const alert = require('pauli-alerts');
 const log = console.log; 
 
  // Alerts
@@ -40,3 +41,5 @@ ${info(` Info: `)}    Ahmad Awais is createing a course on NodeCLI.com
 ${warning(` Warning: `)} Please don't copy me. Be yourself.
 ${error(` Error :`)}   I am on vacation. Contact me next week. 
 `)
+
+alert({ type: "info", msg: "Gutenberg Nightly - zip from master now available on Gutenberg Times",name: `Updated! `});
