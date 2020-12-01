@@ -11,3 +11,5 @@ npx paulisys
 ## History
 
 This is an example project of <a href="https://nodecli.com/">the NodeJS CLI course</a> by Ahmad Awais
+
+[![install size](https://packagephobia.com/badge?p=paulisys)](https://packagephobia.com/result?p=paulisys)
