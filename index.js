@@ -17,6 +17,7 @@ const flags = cli.flags;
     https://developer.mozilla.org/en-US/docs/Glossary/IIFE
     */
     init();
+    input.includes('help') && cli.showHelp(0);
 
     log(data.services);
     log(data.bio);

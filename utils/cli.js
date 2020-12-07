@@ -4,14 +4,18 @@ const meow = require('meow');
 
 const helpText = `
     Usage
-        npx paulisys [options]
+        npx paulisys [options] <commands>
     
     Options
-        social      Show the social info
-        --no-social Don't show the social info
-        ad          Show the ad
-        --no-ad     Don't show the ad
-        -d --debug  Print debug information
+        social       Pring the social info
+        --no-social  Don't pring the social info
+        ad           Print the ad information
+        --no-ad      Don't pring the ad
+        -d --debug   Print debug information
+        -v --version Print CLI version information
+
+    Commands 
+        help        Print CLI help information   
 
     Examples
         npx paulisys --no-social
@@ -31,6 +35,11 @@ const options = {
             type: 'boolean',
             default: false,
             alias: 'd',
+        },
+        version: {
+            type: 'boolean',
+            default: false,
+            alias: 'v',
         },
 
     },
