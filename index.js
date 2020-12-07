@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const handleError = require('node-cli-handle-error');
+//const handleError = require('node-cli-handle-error');
 const alert = require('pauli-alerts');
 
 const log   = console.log; 
