@@ -1,24 +1,26 @@
 const meow = require('meow');
+const { green, yellow, cyan } = require('chalk');
 
 // const cli = meow(`RUN: npx paulisys`);
 
 const helpText = `
     Usage
-        npx paulisys [options] <commands>
+       ${green(`npx paulisys`)} ${yellow(`[--option]`)} ${cyan(`<command>`)}
     
     Options
-        social       Pring the social info
-        --no-social  Don't pring the social info
-        ad           Print the ad information
-        --no-ad      Don't pring the ad
-        -d --debug   Print debug information
-        -v --version Print CLI version information
+       ${yellow(`--social`)}      Pring the social info
+       ${yellow(`--no-social`)}   Don't print the social info
+       ${yellow(`--ad`)}          Print the ad information
+       ${yellow(`--no-ad`)}       Don't print the ad
+       ${yellow(`-d`)} ${yellow(`--debug`)}    Print debug information
+       ${yellow(`-v`)} ${yellow(`--version`)}  Print CLI version information
 
     Commands 
-        help        Print CLI help information   
+       ${cyan(`help`)}          Print CLI help information   
 
     Examples
-        npx paulisys --no-social
+       ${green(`npx paulisys`)} ${yellow(`--no-social`)}
+       ${green(`npx paulisys`)} ${yellow(`--no-ad`)}
 
 `;
 const options = {
