@@ -4,11 +4,12 @@ const unhandled = require('cli-handle-unhandled');
 
 const pkgJSON = require('./../package.json');
 
-module.exports = () => {
+module.exports = (minimal, clear) => {
    
     unhandled();
  
-    welcome ({
+    !minimal &&
+        welcome ({
         title: `Pauli Systems`,
         tagLine: `NodeJS SysOps`,
         version: pkgJSON.version,
@@ -16,9 +17,9 @@ module.exports = () => {
         bgColor: `#FADC00`,
         color: `#000000`,
         bold: true,
-        clear: true,
+        clear,
     });
-
+    minimal && console.log('Birgit Pauli-Haack');
     checkNode('10');
 };
 

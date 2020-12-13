@@ -16,12 +16,16 @@ const flags = cli.flags;
     /* called an IIFE = Immediately Invoked Function Expression
     https://developer.mozilla.org/en-US/docs/Glossary/IIFE
     */
-    init();
+    init(flags.minimal, flags.clear);
     
     input.includes('help') && cli.showHelp(0);
 
     log(data.services);
-    log(data.bio);
+
+    //second way to write this.
+    flags.bio && log(data.bio);
+
+    
     
     if (flags.social){
         log(data.social);
