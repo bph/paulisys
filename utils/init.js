@@ -1,7 +1,7 @@
 const welcome = require('cli-welcome');
 const checkNode = require('cli-check-node');
 const unhandled = require('cli-handle-unhandled');
-
+const boxen = require('boxen');
 const pkgJSON = require('./../package.json');
 
 module.exports = (minimal, clear) => {
@@ -19,7 +19,12 @@ module.exports = (minimal, clear) => {
         bold: true,
         clear,
     });
-    minimal && console.log('Birgit Pauli-Haack');
+    minimal && console.log( boxen( `Birgit Pauli-Haack`, { 
+            padding: 1, 
+            margin: 1, 
+            dimBorder: true,
+            float: `center` 
+        } ) );
     checkNode('10');
 };
 
