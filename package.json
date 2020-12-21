@@ -17,6 +17,7 @@
         "meow": "^8.0.0",
         "node-cli-handle-error": "^1.0.0",
         "node-fetch": "^2.6.1",
+        "ora": "^5.1.0",
         "pauli-alerts": "^1.0.4"
     },
     "keywords": [
