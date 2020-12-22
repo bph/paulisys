@@ -19,11 +19,14 @@ Founder: Birgit Pauli-Haack\n`;
 const bio = `Birgit Pauli-Haack is the publisher of Gutenberg Times, a site with news around WordPress block editor and beyond. Birgit hosts regular Gutenberg Live Q & A on YouTube and co-hosts the podcast Gutenberg Changelog with Mark Uraine.
 `;
 
-const ad = `"Gutenberg Nightly - zip from master now available on Gutenberg Times"`
+const ad = `Gutenberg Nightly - zip from master now available on Gutenberg Times`
+
+const blog = `Gutenberg Times lastest articles`
 
 module.exports = {
     services,
     bio,
     social,
     ad,
+    blog,
 };

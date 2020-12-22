@@ -16,6 +16,7 @@ const helpText = `
        ${yellow(`--no-bio`)}      Don't print the bio info
        ${yellow(`--ad`)}          Print the ad info ${dim(`(DEFAULT: true)`)}
        ${yellow(`--no-ad`)}       Don't print the ad
+       ${yellow(`-p`)} ${yellow(`--posts`)}    Show list of 10 blog posts
        ${yellow(`-d`)} ${yellow(`--debug`)}    Print debug info
        ${yellow(`-v`)} ${yellow(`--version`)}  Print CLI version info
        ${yellow(`-m`)} ${yellow(`--minimal`)}  Print minimal info
@@ -61,10 +62,13 @@ const options = {
             default: false,
             alias: 'v',
         },
+        posts: {
+            type: 'boolean',
+            default: false,
+            alias: 'p',
+        }
 
     },
 };
-
-
 
 module.exports = meow(helpText, options);

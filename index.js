@@ -8,7 +8,8 @@ const init  = require('./utils/init');
 const data  = require('./utils/data');
 const cli   = require('./utils/cli');
 const debug = require('./utils/debug');
-const stats = require('./utils/stats');
+//const stats = require('./utils/stats');
+const posts = require('./utils/posts');
 
 const input = cli.input;
 const flags = cli.flags;
@@ -28,12 +29,14 @@ const flags = cli.flags;
     flags.bio && log(data.bio);
     flags.social && log(data.social);
     flags.ad && alert({ type: 'info', msg: data.ad});
+   
     /*if (flags.ad){
         alert({ type: 'info', msg: data.ad});
     }*/
-
+    flags.posts && alert({ type: 'success', msg: data.blog, name: 'News'});
+    flags.posts && await(posts());
     //Stats.
-    await stats();
+    //await stats();
 
     //Debug info if needed
     debug(flags.debug, cli);

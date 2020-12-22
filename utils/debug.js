@@ -7,8 +7,9 @@ module.exports = (isDebug, cli) => {
     }
     
     alert({ type: 'warning', msg: `Debugging Info`});
-    log(`cli`, cli);
+    log(`flags`, cli.flags);
     /* log(`input`, cli.input);
-    log(`flags`, cli.flags); */
+    log(`flags`, cli.flags);
+    log(`cli`, cli); */
     log();
 }
