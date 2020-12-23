@@ -2,6 +2,7 @@
 
 //const handleError = require('node-cli-handle-error');
 const alert = require('pauli-alerts');
+//const { Toggle } = require('enquirer');
 
 const log   = console.log; 
 const init  = require('./utils/init');
@@ -22,6 +23,17 @@ const flags = cli.flags;
     init(flags.minimal, flags.clear);
     input.includes('help') && cli.showHelp(0);
 
+    /* exampls of a Toggle user prompt
+    const prompt = new Toggle({
+        message: 'Tell us about your class?',
+        enabled: `2020`,
+        disabled: `2021`,
+    })
+
+    const isClass2020 = await prompt.run()
+    log(`isClass2020`, isClass2020);
+    */
+  
     // Print out the info 
     log(data.services);
 
@@ -35,9 +47,12 @@ const flags = cli.flags;
     }*/
     flags.posts && alert({ type: 'success', msg: data.blog, name: 'News'});
     flags.posts && await(posts());
+  
     //Stats.
     //await stats();
-
+   
     //Debug info if needed
     debug(flags.debug, cli);
+
+
 })();
